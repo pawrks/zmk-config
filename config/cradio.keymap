@@ -204,7 +204,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O  &kp P
 		&kp A &hm CAPS S &hm LALT D &hm LGUI F &kp G 			       	&kp H  &hm RGUI J &hm RALT K &hm RCTL L &kp SEMI
 		&hs LSHIFT Z &kp X &kp C &kp V &mt LC(LS(LALT)) B &kp N &kp M  &kp COMMA &kp DOT &hs RSHIFT SLASH
-          				&kp SPC  &mt LC(LS(LALT)) SPC &kp SPC &to 1 
+          				&to 3  &mt LC(LS(LALT)) SPC &kp SPC &to 1 
 		>;
 		};
 
@@ -212,7 +212,7 @@
 		bindings = <
 		&kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &trans		&trans &kp LS(COMMA) &kp LS(DOT) &kp CARET &kp BSPC
 		&kp TAB    &hm LCTL EQUAL    &hm LALT LA(RBKT)      &hm LGUI LA(LS(RBKT))     &trans 		&trans &hm RGUI LBRC  &hm RALT RBRC &hm RCTL PIPE  &kp AMPS
-  		&hs LSHIFT TILDE    &kp GRAVE 	&kp LA(LBKT) &kp LA(LS(LBKT))  &to 0 	&to 2 &kp LPRN &kp RPRN &kp RBKT  &kp RSHIFT
+  		&hs LSHIFT TILDE    &kp GRAVE 	&kp LA(LBKT) &kp LA(LS(LBKT))  &to 0 	&to 2 &kp LPRN &kp RPRN &kp RBKT  &kp RET
 					    &to 0 &kp SPC					&kp SPC &to 2 
 		>;
 		};
@@ -228,10 +228,10 @@
 
 		tri_layer {
 		bindings = <
-		&trans  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &trans
-		&kp TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  						&trans &kp DOWN  &hm RALT UP &hm RCTL RIGHT &kp LG(RBKT)
-		&kp LSHIFT &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &kp RSHIFT  
-					 &to 0 &trans &trans &kp RGUI 
+		&kp ESC  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &BSPC
+		&kp TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  						&kp H &kp J  &hm RALT K &hm RCTL L &kp LG(RBKT)
+		&kp LSHIFT &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &kp RET  
+					 &to 0 &trans &kp SPC &to 0 
 		>;
 		};
 		bt {
