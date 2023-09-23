@@ -204,7 +204,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O  &kp P
 		&kp A &hm LCTL S &hm LALT D &hm LGUI F &kp G 			       	&kp H  &hm RGUI J &hm RALT K &hm RCTL L &kp SEMI
 		&hs LSHIFT Z &kp X &kp C &kp V &mt LC(LS(LALT)) B &kp N &kp M  &kp COMMA &kp DOT &hs RSHIFT SLASH
-          				&mo 3  &hs LCTL SPC &hs RGUI SPC &to 1 
+          				&mo 3  &hs CAPS SPC &hs RGUI SPC &to 1 
 		>;
 		};
 
@@ -213,7 +213,7 @@
 		&kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &trans		&trans &kp LS(COMMA) &kp LS(DOT) &kp CARET &kp BSPC
 		&kp TAB    &hm LCTL EQUAL    &hm LALT LA(RBKT)      &hm LGUI LA(LS(RBKT))     &trans 		&trans &hm RGUI LBRC  &hm RALT RBRC &hm RCTL PIPE  &kp AMPS
   		&hs LSHIFT TILDE    &kp GRAVE 	&kp LA(LBKT) &kp LA(LS(LBKT))  &to 0 	&to 2 &kp LPRN &kp RPRN &kp RBKT  &hs RSHIFT RET
-					    &to 0 &hs LCTL SPC					&hs RGUI SPC &to 2 
+					    &to 0 &hs CAPS SPC					&hs RGUI SPC &to 2 
 		>;
 		};
 
@@ -222,16 +222,16 @@
 		&trans &kp C_PP &kp C_PREV  &kp C_NEXT  &trans    			&trans  &kp N7 &kp N8 &kp N9 &trans
 		&kp TAB  &trans   &hm LALT C_VOL_DN  &hm LGUI C_VOL_UP  &trans  			&trans &hm RGUI N4  &kp N5  &kp N6   &kp EQUAL
 		&hsl LSHIFT 4  &kp PRCNT &kp SLASH &kp STAR &to 0 &trans &kp N1 &kp N2 &td DOT N3  &kp MINUS
-					  &to 0 &hs LCTL SPC  				&hs RGUI SPC &trans
+					  &to 0 &hs CAPS SPC  				&hs RGUI SPC &trans
 		>;
 		};
 
 		tri_layer {
 		bindings = <
-		&kp ESC  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &kp BSPC
-		&kp TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  						&kp H &kp J  &hm RALT K &hm RCTL L &kp LG(RBKT)
-		&kp LSHIFT &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &hs RSHIFT RET  
-					 &to 0 &hs LCTL SPC &hs RGUI SPC &to 0 
+		&kp TAB  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &trans &trans    &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(LBKT) &kp BSPC
+		&hs LSHIFT TAB &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  						&kp H &kp J  &hm RALT K &hm RCTL L &kp LG(RBKT)
+		&hs LSHIFT TAB &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &to 0   				&kp RGUI &td HOME PG_DN  &td END PG_UP  &trans &hs RSHIFT RET  
+					 &to 0 &hs CAPS SPC &hs RGUI SPC &to 0 
 		>;
 		};
 		bt {
